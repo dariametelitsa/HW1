@@ -11,7 +11,7 @@ export const Menu = (props: {items: Array<MenuData>}) => {
             props.items.map((el:MenuData) => {
               return <li>
               <a href={el.link}>{el.item}</a>
-            </li> 
+            </li>
             })
           }
         </ul>
@@ -27,5 +27,4 @@ const StyledMenu = styled.nav`
   li {
     list-style-type: none;
   }
-  
 `
