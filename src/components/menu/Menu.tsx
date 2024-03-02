@@ -8,8 +8,8 @@ export const Menu = (props: {items: Array<MenuData>}) => {
     <StyledMenu>
         <ul>
           {
-            props.items.map((el:MenuData) => {
-              return <li>
+            props.items.map((el:MenuData, index:number) => {
+              return <li key={index}>
               <a href={el.link}>{el.item}</a>
             </li>
             })
@@ -22,6 +22,7 @@ export const Menu = (props: {items: Array<MenuData>}) => {
 const StyledMenu = styled.nav`
   ul {
     display: flex;
+    justify-content: center;
     gap: 40px;
   }
   li {
