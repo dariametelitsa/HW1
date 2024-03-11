@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Logo } from '../../components/logo/Logo';
-import { Menu } from '../../components/menu/Menu';
 import { Container } from "../../components/Container";
 import { FlexWrapper } from "../../components/FlexWrapper";
+import { HeaderMenu } from "./headerMenu/HeaderMenu";
+import { theme } from "../../styles/Theme";
 
 export interface MenuData {
   item: string;
@@ -41,7 +42,7 @@ export const Header = () => {
       <Container>
         <FlexWrapper justify={'space-between'} alignI={'center'}>
           <Logo />
-          <Menu items={menuItems}/>
+          <HeaderMenu items={menuItems}/>
         </FlexWrapper>
       </Container>
     </StyledHeader>
@@ -50,5 +51,11 @@ export const Header = () => {
 
 
 const StyledHeader = styled.header`
-  background-color: antiquewhite;
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background-color: ${theme.colors.primaryBg};
 `
