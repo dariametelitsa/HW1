@@ -58,4 +58,5 @@ const StyledHeader = styled.header`
   right: 0;
   z-index: 999;
   background-color: ${theme.colors.primaryBg};
+  opacity: 90%;
 `

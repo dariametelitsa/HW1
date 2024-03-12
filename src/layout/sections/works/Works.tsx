@@ -32,15 +32,17 @@ export const Works = () => {
     <StyledWorks>
       <SectionTitle>My works</SectionTitle>
       <TabMenu items={workItems}/>
-      <FlexWrapper justify='space-around'>
-        <Work title={'Social network'} text={'Lorem ipsum'} src={socialImg} />
-        <Work title={'Timer'} text={'Lorem ipsum'} src={timerImg} />
+      <FlexWrapper justify='space-around' alignI={'flex-start'}>
+        <Work title={'Social network'}
+              text={'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim.'}
+              src={socialImg}/>
+        <Work title={'Timer'}
+              text={'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit  ut labore et dolore magna aliqua Ut enim'}
+              src={timerImg}/>
       </FlexWrapper>
     </StyledWorks>
   );
 };
 
 const StyledWorks = styled.section`
-
-
 `

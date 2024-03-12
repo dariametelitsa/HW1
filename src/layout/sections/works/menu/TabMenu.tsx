@@ -10,11 +10,11 @@ export const TabMenu = (props: {items: Array<MenuData>}) => {
         <ul>
           {
             props.items.map((el:MenuData, index:number) => {
-              return <ListItem key={index}>
+              return <li key={index}>
                 <Link href={el.link}>
                   {el.item}
                 </Link>
-              </ListItem>
+              </li>
             })
           }
         </ul>
@@ -29,10 +29,6 @@ const StyledTabMenu = styled.nav`
     gap: 20px;
     margin-bottom: 40px;
   }
-`
-
-const ListItem = styled.li`
-
 `
 
 
