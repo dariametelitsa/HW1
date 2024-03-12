@@ -10,11 +10,11 @@ export const TabMenu = (props: {items: Array<MenuData>}) => {
         <ul>
           {
             props.items.map((el:MenuData, index:number) => {
-              return <li key={index}>
+              return (<li key={index}>
                 <Link href={el.link}>
                   {el.item}
                 </Link>
-              </li>
+              </li>)
             })
           }
         </ul>

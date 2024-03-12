@@ -35,7 +35,7 @@ const SkillText = styled.p`
   text-align: center;
 `
 
-const IconWrapper = styled.div `
+export const IconWrapper = styled.div `
   position: relative;
   font-size: 0;
 
