@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Icon } from '../../components/icon/Icon';
 import { FlexWrapper } from '../../components/FlexWrapper';
+import { theme } from "../../styles/Theme";
 
 export const Footer = () => {
   return (
@@ -11,54 +12,78 @@ export const Footer = () => {
         <SocialList>
           <SocialItem>
             <SocialLink>
-              <Icon iconId='inst' width={'21px'} />
+              <Icon iconId='inst' width={'21px'} height={'21px'} />
             </SocialLink>
           </SocialItem>
 
           <SocialItem>
             <SocialLink>
-              <Icon iconId='telegr' width={'21px'} />
+              <Icon iconId='telegr' width={'21px'} height={'21px'} />
             </SocialLink>
           </SocialItem>
 
           <SocialItem>
             <SocialLink>
-              <Icon iconId='vk' width={'21px'} />
+              <Icon iconId='vk' width={'21px'} height={'21px'} />
             </SocialLink>
           </SocialItem>
 
           <SocialItem>
             <SocialLink>
-              <Icon iconId='in' width={'21px'} />
+              <Icon iconId='in' width={'21px'} height={'21px'} />
             </SocialLink>
           </SocialItem>
         </SocialList>
-        <Copiright>© 2023 Svetlana Dyablo, All Rights Reserved.</Copiright>
+        <Copyright>© 2023 Svetlana Dyablo, All Rights Reserved.</Copyright>
       </FlexWrapper>
     </StyledFooter>
   );
 };
 
 const StyledFooter = styled.footer `
-  background-color: #e09f88;
-  min-height: 20vh;
+  background-color: ${theme.colors.primaryBg};
+  padding: 40px 0;
 `
 
 const Name = styled.h5 `
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  letter-spacing: 3px;
+
 `
 
 const SocialList = styled.ul `
   display: flex;
   gap: 10px;
-  padding-left: 0;
+  margin: 30px 0;
 `
 
 const SocialItem = styled.li `
-  list-style-type: none;
+
 `
 
 const SocialLink = styled.a `
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: ${theme.colors.accent};
+
+  &:hover {
+    color: ${theme.colors.primaryBg};
+    transform: translateY(-4px);
+  }
 `
 
-const Copiright = styled.small `
+const Copyright = styled.small `
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
+  opacity: 0.5;
 `
