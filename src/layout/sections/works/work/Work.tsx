@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from "../../../../components/Link";
 
 type WorkPropsType = {
   title: string,
@@ -22,7 +23,6 @@ export const Work = (props: WorkPropsType) => {
 const StyledWork = styled.div`
   width: 100%;
   max-width: 540px;
-  background-color: #fffedf;
 `
 
 const Image = styled.img`
@@ -36,9 +36,5 @@ const Title = styled.h3`
 `
 
 const Text = styled.p`
-
-`
-
-const Link = styled.a`
 
 `
