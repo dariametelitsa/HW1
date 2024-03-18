@@ -86,9 +86,8 @@ const PhotoWrapper = styled.div `
       left: 20px;
     }
   }
-  @media ${theme.media.mobile} {
-    margin-top: 65px;
-  }
+  @media ${theme.media.tablet} {
+  margin-top: 65px;
 `
 
 const Photo = styled.img`
