@@ -13,10 +13,12 @@ type WorkPropsType = {
 export const Work = (props: WorkPropsType) => {
   return (
     <StyledWork>
+
       <ImageWrapper>
-        <Image src={props.src} alt='' />
+        <Image src={props.src} alt=''/>
         <Button>View project</Button>
       </ImageWrapper>
+
       <Description>
         <Title>{props.title}</Title>
         <Text>{props.text}</Text>
@@ -29,8 +31,8 @@ export const Work = (props: WorkPropsType) => {
 };
 
 const StyledWork = styled.div`
-  width: 100%;
-  max-width: 540px;
+  width: 330px;
+  flex-grow: 1;
   background-color: ${theme.colors.secondaryBg};
 
   ${Link} {
@@ -40,27 +42,15 @@ const StyledWork = styled.div`
       margin-left: 20px;
     }
   }
+}
+
+@media ${theme.media.desktop} {
+  max-width: 540px;
+}
 `
 
 const ImageWrapper = styled.div`
   position: relative;
-
-  &:hover {
-    &::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      background: rgba(0, 0, 0, 0.3);
-      backdrop-filter: blur(4px);
-    }
-
-    ${Button} {
-      opacity: 100%;
-    }
-  }
 
   ${Button} {
     opacity: 0;
@@ -75,6 +65,37 @@ const ImageWrapper = styled.div`
     }
   }
 
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(4px);
+    opacity: 0;
+  }
+
+  &:hover {
+    &::before {
+      opacity: 100%;
+    }
+
+    ${Button} {
+      opacity: 100%;
+    }
+  }
+
+  @media ${theme.media.tablet} {
+    &::before {
+      opacity: 100%;
+    }
+
+    ${Button} {
+      opacity: 100%;
+    }
+  }
 `
 
 const Image = styled.img`
@@ -88,9 +109,9 @@ const Title = styled.h3`
 `
 
 const Text = styled.p`
-    margin: 14px 0 10px;
+  margin: 14px 0 10px;
 `
 
-const Description = styled.div `
+const Description = styled.div`
   padding: 25px 20px;
 `
