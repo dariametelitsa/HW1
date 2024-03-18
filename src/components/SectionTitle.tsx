@@ -3,13 +3,14 @@ import { theme } from "../styles/Theme";
 import { font } from "../styles/Common";
 
 export const SectionTitle = styled.h2`
+  ${font({family: "'Josefin Sans', sans-serif", weight: 600, Fmax: 36, Fmin: 30})}
   position: relative;
   margin-bottom: 90px;
-  ${font({family: "'Josefin Sans', sans-serif", weight: 600, Fmax: 36, Fmin: 30})}
+  text-transform: capitalize;
   font-optical-sizing: auto;
   font-style: normal;
   text-align: center;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
   color: ${theme.colors.font};
 
   &::before {

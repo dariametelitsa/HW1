@@ -67,7 +67,6 @@ const Name = styled.h2`
 
 const PhotoWrapper = styled.div `
   position: relative;
-  margin-top: 65px;
   z-index: 0;
 
   &::before {
@@ -86,6 +85,9 @@ const PhotoWrapper = styled.div `
       top: -17px;
       left: 20px;
     }
+  }
+  @media ${theme.media.mobile} {
+    margin-top: 65px;
   }
 `
 
