@@ -8,5 +8,10 @@ export const theme = {
 
     border: '#4a4a4a',
     placeholder: '#495057',
+  },
+
+  media: {
+    tablet: 'screen and (max-width: 768px)',
+    mobile: 'screen and (max-width: 567px)',
   }
 }

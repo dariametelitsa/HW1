@@ -8,11 +8,12 @@ import { Testimony } from './layout/sections/testimony/Testimony';
 import { Contact } from './layout/sections/contact/Contact';
 import { Slogan } from './layout/sections/slogan/Slogan';
 import { Footer } from './layout/footer/Footer';
-// import sprite from './assets/images/icons-sprite.svg'
+import { ClipPath } from "./layout/clip-path";
 
 function App() {
   return (
     <div className="App">
+      {/*<ClipPath/>*/}
       <Header />
       <Main />
       <Skills />

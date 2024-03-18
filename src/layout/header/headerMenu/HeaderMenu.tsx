@@ -34,8 +34,9 @@ const StyledHeaderMenu = styled.nav`
     justify-content: center;
     gap: 40px;
   }
-  li {
-    list-style-type: none;
+
+  @media ${theme.media.tablet} {
+    display: none;
   }
 `
 
@@ -54,7 +55,7 @@ const Mask = styled.span `
   display: inline-block;
   height: 50%;
   overflow: hidden;
-    color: ${theme.colors.accent};
+  color: ${theme.colors.accent};
   transition: 0.3s;
 
    & + & {
@@ -62,7 +63,6 @@ const Mask = styled.span `
      span {
        display: inline-block;
        transform: translateY(-50%);
-
      }
    }
 `
