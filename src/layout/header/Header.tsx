@@ -33,29 +33,29 @@ export const Header: React.FC = () => {
 };
 
 export interface MenuData {
-  item: string;
+  title: string;
   link: string;
 }
 
 const menuItems: Array<MenuData> = [
   {
-    item: 'Home',
+    title: 'Home',
     link: '#1',
   },
   {
-    item: 'Skills',
+    title: 'Skills',
     link: '#2',
   },
   {
-    item: 'Works',
+    title: 'Works',
     link: '#3',
   },
   {
-    item: 'Testimony',
+    title: 'Testimony',
     link: '#4',
   },
   {
-    item: 'Contact',
+    title: 'Contact',
     link: '#5',
   },
 ]

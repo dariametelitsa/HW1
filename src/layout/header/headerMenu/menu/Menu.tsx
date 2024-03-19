@@ -9,12 +9,12 @@ export const Menu: React.FC<{items: Array<MenuData>}> = (props: {items: Array<Me
         props.items.map((el: MenuData, index: number) => {
           return <S.MenuItem key={index}>
             <S.Link href={el.link}>
-              {el.item}
+              {el.title}
               <S.Mask>
-                <span>{el.item}</span>
+                <span>{el.title}</span>
               </S.Mask>
               <S.Mask>
-                <span>{el.item}</span>
+                <span>{el.title}</span>
               </S.Mask>
             </S.Link>
           </S.MenuItem>
