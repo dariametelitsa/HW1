@@ -1,6 +1,8 @@
 import styled, { css } from "styled-components";
 import { theme } from "../../styles/Theme";
 
+
+/////////////////Menu/////////////////
 const Link = styled.a `
   font-family: 'Josefin Sans', sans-serif;
   font-size: 30px;
@@ -27,7 +29,6 @@ const Mask = styled.span `
      }
    }
 `
-
 
 const MenuItem = styled.li `
   position: relative;
@@ -64,7 +65,10 @@ const MenuItem = styled.li `
   }
 `
 
-//Mobile Menu
+
+
+/////////////////Mobile Menu/////////////////
+
 const MobileMenu = styled.nav`
 `
 
@@ -97,8 +101,8 @@ const BurgerButton = styled.button<{isOpen: boolean}> `
   position: fixed;
   width: 100px;
   height: 100px;
-  top: 0px;
-  right: 0px;
+  top: 0;
+  right: 0;
   z-index: 9999;
 
   span {
@@ -145,6 +149,15 @@ const BurgerButton = styled.button<{isOpen: boolean}> `
 `
 
 
+/////////////////Desktop Menu/////////////////
+const DesktopMenu = styled.nav`
+  ul {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+`
+
 
 export const S = {
   Link,
@@ -153,4 +166,5 @@ export const S = {
   MobileMenu,
   MobileMenuPopup,
   BurgerButton,
+  DesktopMenu,
 }
