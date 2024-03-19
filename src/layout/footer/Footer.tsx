@@ -26,7 +26,7 @@ export const Footer:React.FC = () => {
         <S.Name>Svetlana</S.Name>
         <S.SocialList>
           {
-            SocialItemData.map((s,index) => {
+            SocialItemData.map((s) => {
               return <li>
                 <S.SocialLink>
                   <Icon iconId={s.iconID} width={'21px'} height={'21px'} />
