@@ -32,12 +32,12 @@ export const Header: React.FC = () => {
   );
 };
 
-export interface MenuData {
+export interface menuData {
   title: string;
   link: string;
 }
 
-const menuItems: Array<MenuData> = [
+const menuItems: Array<menuData> = [
   {
     title: 'Home',
     link: '#1',

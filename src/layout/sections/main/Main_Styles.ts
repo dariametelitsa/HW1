@@ -63,8 +63,10 @@ const PhotoWrapper = styled.div `
       left: 20px;
     }
   }
+
   @media ${theme.media.tablet} {
-  margin-top: 65px;
+    margin-top: 65px;
+  }
 `
 
 const Photo = styled.img`
