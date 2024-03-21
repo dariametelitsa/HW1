@@ -3,9 +3,14 @@ import { theme } from "../../styles/Theme";
 
 const Slider = styled.div`
   max-width: 500px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  &:hover {
+    cursor: grab;
+  }
 `
 
 const Slide = styled.div`
@@ -23,28 +28,8 @@ const Name = styled.span`
   display: inline-block;
 `
 
-const Pagination = styled.div`
-  span {
-    display: inline-block;
-    width: 7px;
-    height: 7px;
-    border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.5);
-
-    & + span {
-      margin-left: 5px;
-    }
-
-    &.active {
-      width: 20px;
-      background-color: ${theme.colors.accent};
-    }
-  }
-`
-
 export const S = {
   Slider,
   Slide,
   Name,
-  Pagination,
 }
