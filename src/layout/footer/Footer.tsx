@@ -29,7 +29,7 @@ export const Footer:React.FC = () => {
             SocialItemData.map((s) => {
               return <li>
                 <S.SocialLink>
-                  <Icon iconId={s.iconID} width={'21px'} height={'21px'} />
+                  <Icon iconId={s.iconID} width={'21'} height={'21'} />
                 </S.SocialLink>
               </li>
             })
