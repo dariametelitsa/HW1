@@ -11,7 +11,7 @@ export const Skills = () => {
     <S.Skills id={'skills'}>
       <Container>
         <SectionTitle>My Skills</SectionTitle>
-        <FlexWrapper as='ul' wrap justify='space-between'>
+        <FlexWrapper as='ul' wrap>
           <Fade
             cascade={true}
             damping={0.2}>
