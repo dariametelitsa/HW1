@@ -46,7 +46,6 @@ const worksData = [
     type: 'react',
   },
 ]
-
 export const Works: React.FC = () => {
   const [currentFilterStatus, setCurrentFilterStatus] = useState('all');
   let filteredWorks = worksData;
@@ -66,7 +65,7 @@ export const Works: React.FC = () => {
   }
 
   return (
-    <S.Works>
+    <S.Works id={'works'}>
       <Container>
         <SectionTitle>My works</SectionTitle>
         <TabMenu tabsItems={tabsItems}

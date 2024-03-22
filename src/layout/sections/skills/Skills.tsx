@@ -7,7 +7,7 @@ import { S } from "./Skills_Styles";
 
 export const Skills = () => {
   return (
-    <S.Skills>
+    <S.Skills id={'skills'}>
       <Container>
         <SectionTitle>My Skills</SectionTitle>
         <FlexWrapper as='ul' wrap justify='space-between'>

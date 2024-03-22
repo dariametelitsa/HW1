@@ -8,7 +8,13 @@ export const Menu: React.FC<{items: Array<menuData>}> = (props: {items: Array<me
       {
         props.items.map((el: menuData, index: number) => {
           return <S.MenuItem key={index}>
-            <S.Link href={`#${el.href}`}>
+
+            <S.NavLink
+              activeClass="active"
+              to={el.href}
+              spy={true}
+              smooth={true}
+            >
               {el.title}
               <S.Mask>
                 <span>{el.title}</span>
@@ -16,7 +22,7 @@ export const Menu: React.FC<{items: Array<menuData>}> = (props: {items: Array<me
               <S.Mask>
                 <span>{el.title}</span>
               </S.Mask>
-            </S.Link>
+            </S.NavLink>
           </S.MenuItem>
         })
       }
