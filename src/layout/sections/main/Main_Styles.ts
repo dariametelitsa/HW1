@@ -5,6 +5,10 @@ import { font } from "../../../styles/Common";
 const Main = styled.section`
   min-height: 100vh;
   display: flex;
+
+  & h1 {
+    display: none;
+  }
 `
 
 const SmallText = styled.span`
@@ -12,7 +16,7 @@ const SmallText = styled.span`
   font-weight: 400;
 `
 
-const MainTitle = styled.h1`
+const MainTitle = styled.span`
   ${font({ weight: 400, Fmax: 27, Fmin: 20})};
 `
 
